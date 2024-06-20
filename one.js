@@ -14,7 +14,7 @@ export default function One(){
         uri:"https://picsum.photos/200/300"
       }}/> */}
       <TouchableWithoutFeedback onPress={()=>console.log('TAPPED')}>
-      <Image source={require("./assets/splash.png")} style={styles.img}/>
+      <Image source={require("./app/assets/splash.png")} style={styles.img}/>
       </TouchableWithoutFeedback>
       <Button
         title="Press me"

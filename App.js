@@ -28,11 +28,14 @@ console.log(useDeviceOrientation());
  subTitle="$100"
  image={require("./app/assets/jacket.jpg")}/> */}
  {/* <ListingDetailsScreen/> */}
- <Icon
+ {/* <Icon
  name="email"
  size={50}
  backgroundColor="red"
- iconColor="white" />
+ iconColor="white" /> */}
+ <ListItem title="My title" 
+ subTitle={" "}
+ IconComponent={<Icon name='email'/>}/>
 </View>
 
   );

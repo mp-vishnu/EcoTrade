@@ -11,6 +11,7 @@ import ListingDetailsScreen from './app/components/Screen/ListingDetailsScreen';
 import MessageScreen from './app/components/Screen/MessageScreen';
 import AccountScreen from './app/components/Screen/AccountScreen';
 import Icon from './app/components/Icon';
+import ListingsScreen from './app/components/Screen/ListingsScreen';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
 export default function App() {
 console.log(useDeviceOrientation());
@@ -36,7 +37,8 @@ console.log(useDeviceOrientation());
  {/* <ListItem title="My title" 
  subTitle={" "}
  IconComponent={<Icon name='email'/>}/> */}
-<AccountScreen/>
+{/* <AccountScreen/> */}
+<ListingsScreen/>
 </View>
 
   );

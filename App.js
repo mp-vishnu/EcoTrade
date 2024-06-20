@@ -9,6 +9,8 @@ import Card from './app/components/Card/Card';
 import ListItem from './app/components/ListItem';
 import ListingDetailsScreen from './app/components/Screen/ListingDetailsScreen';
 import MessageScreen from './app/components/Screen/MessageScreen';
+//import AccountScreen from './app/components/Screen/AccountScreen';
+import Icon from './app/components/Icon';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
 export default function App() {
 console.log(useDeviceOrientation());
@@ -26,7 +28,11 @@ console.log(useDeviceOrientation());
  subTitle="$100"
  image={require("./app/assets/jacket.jpg")}/> */}
  {/* <ListingDetailsScreen/> */}
- <MessageScreen/>
+ <Icon
+ name="email"
+ size={50}
+ backgroundColor="red"
+ iconColor="white" />
 </View>
 
   );
@@ -36,7 +42,6 @@ const styles = StyleSheet.create({
   container: {
   flex:1,
   backgroundColor: '#f8f4f4',
-  padding:20,
-  paddingTop:100
+  paddingTop:'18%'
   },
 });

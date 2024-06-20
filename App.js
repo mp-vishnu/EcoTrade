@@ -9,7 +9,7 @@ import Card from './app/components/Card/Card';
 import ListItem from './app/components/ListItem';
 import ListingDetailsScreen from './app/components/Screen/ListingDetailsScreen';
 import MessageScreen from './app/components/Screen/MessageScreen';
-//import AccountScreen from './app/components/Screen/AccountScreen';
+import AccountScreen from './app/components/Screen/AccountScreen';
 import Icon from './app/components/Icon';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
 export default function App() {
@@ -33,9 +33,10 @@ console.log(useDeviceOrientation());
  size={50}
  backgroundColor="red"
  iconColor="white" /> */}
- <ListItem title="My title" 
+ {/* <ListItem title="My title" 
  subTitle={" "}
- IconComponent={<Icon name='email'/>}/>
+ IconComponent={<Icon name='email'/>}/> */}
+<AccountScreen/>
 </View>
 
   );

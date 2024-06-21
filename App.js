@@ -7,15 +7,25 @@ import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
 import AccountScreen from './app/components/Screen/AccountScreen';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
+
+const categories=[
+  {label:"Furniture",value:1},
+  {label:"Clothing",value:2},
+  {label:"Cameras",value:3},
+];
 export default function App() {
 console.log(useDeviceOrientation());
 const [isNew,setIsNew]=useState(false);
+const  [category,setCategory]=useState()
   return (
 
 <View style={styles.container}>
 {/* <AccountScreen/> */}
-<AppPicker icon="apps" placeholder="category"/>
-{/* <AppTextInput placeholder="email" icon="email" /> */}
+<AppPicker 
+selectedItem={category}
+onSelectItem={item=>setCategory(item)}
+items={categories} icon="apps" placeholder="category"/>
+<AppTextInput placeholder="email" icon="email" />
 </View>
 
   );

@@ -52,7 +52,7 @@ function AccountScreen(props) {
           )}
         />
       </View>
-     <View style={{marginTop:'15%'}}>
+     <View style={{marginTop:'15%',height:100}}>
      <ListItem
         title="Log Out"
         IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}

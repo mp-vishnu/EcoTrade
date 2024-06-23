@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     width: "100%",
     padding: 15,
+    alignItems:'center',
     marginVertical: 10,
   },
   icon: {

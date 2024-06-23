@@ -10,13 +10,15 @@
   },
   "dependencies": {
     "@react-native-community/hooks": "^3.0.0",
+    "@react-native-picker/picker": "2.7.5",
     "expo": "~51.0.14",
     "expo-status-bar": "~1.12.1",
     "expo-updates": "~0.25.17",
+    "formik": "^2.4.6",
     "react": "18.2.0",
     "react-native": "0.74.2",
     "react-native-gesture-handler": "~2.16.1",
-    "@react-native-picker/picker": "2.7.5"
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

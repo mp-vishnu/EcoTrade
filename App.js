@@ -6,6 +6,7 @@ import Two from './two'
 import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
 import AccountScreen from './app/components/Screen/AccountScreen';
+import LoginScreen from './app/components/Screen/loginScreen';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
 
 const categories=[
@@ -21,11 +22,7 @@ const  [category,setCategory]=useState()
 
 <View style={styles.container}>
 {/* <AccountScreen/> */}
-<AppPicker 
-selectedItem={category}
-onSelectItem={item=>setCategory(item)}
-items={categories} icon="apps" placeholder="category"/>
-<AppTextInput placeholder="email" icon="email" />
+<LoginScreen/>
 </View>
 
   );

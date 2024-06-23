@@ -7,6 +7,7 @@ import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
 import AccountScreen from './app/components/Screen/AccountScreen';
 import LoginScreen from './app/components/Screen/loginScreen';
+import RegisterScreen from './app/components/Screen/RegisterScreen';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
 
 const categories=[
@@ -22,7 +23,7 @@ const  [category,setCategory]=useState()
 
 <View style={styles.container}>
 {/* <AccountScreen/> */}
-<LoginScreen/>
+<RegisterScreen/>
 </View>
 
   );

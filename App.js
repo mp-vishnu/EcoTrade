@@ -6,9 +6,10 @@ import Two from './two'
 import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
 import AccountScreen from './app/components/Screen/AccountScreen';
-import LoginScreen from './app/components/Screen/loginScreen';
+//import LoginScreen from './app/components/Screen/loginScreen';
 import RegisterScreen from './app/components/Screen/RegisterScreen';
 import ListingEditScreen from './app/components/Screen/ListingEditScreen';
+import MessageScreen from './app/components/Screen/MessageScreen';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
 
 const categories=[

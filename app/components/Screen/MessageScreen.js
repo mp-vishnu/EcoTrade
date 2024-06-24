@@ -2,12 +2,12 @@ import React,{ useState }  from 'react';
 import { FlatList,View } from 'react-native';
 import ListItem from '../ListItem';
 import Screen from '../Screen';
-import ListItemSeparator from '../ListItemSeparator';
-import ListItemDeleteAction from '../ListItemDeleteAction';
+import ListItemSeparator from '../../components/lists/ListItemSeparator';
+import ListItemDeleteAction from '../../components/lists/ListItemDeleteAction';
 const initialMessages=[
     {
         id:1,
-        title:'T1',
+        title:'T3',
         description:'D1',
         image:require('../../assets/mosh.jpg')
     },

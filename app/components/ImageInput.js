@@ -78,7 +78,8 @@ const styles = StyleSheet.create({
     borderRadius:17
   },
   mainContainer:{
-    justifyContent:'flex-start',
+    //justifyContent:'flex-start',
+    
   },
   image: {
     width: 100,

@@ -1,40 +1,43 @@
-import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
-import { StyleSheet, Text, View, Image,SafeAreaView, TouchableWithoutFeedback, Button, Alert, Dimensions, Switch } from 'react-native';
-import One from './one';
-import Two from './two'
-import AppTextInput from './app/components/AppTextInput';
-import AppPicker from './app/components/AppPicker';
-import AccountScreen from './app/components/Screen/AccountScreen';
-//import LoginScreen from './app/components/Screen/loginScreen';
-import RegisterScreen from './app/components/Screen/RegisterScreen';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, View, Button, Image, Text } from 'react-native';
+import * as ImagePicker from 'expo-image-picker';
+//import ImageInputLayout from './app/components/ImageInputLayout';
 import ListingEditScreen from './app/components/Screen/ListingEditScreen';
-import MessageScreen from './app/components/Screen/MessageScreen';
-import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
+import ImageInputtt from './app/components/ImageInputtt';
+import Screen from './app/components/Screen';
 
-const categories=[
-  {label:"Furniture",value:1},
-  {label:"Clothing",value:2},
-  {label:"Cameras",value:3},
-];
 export default function App() {
-console.log(useDeviceOrientation());
-const [isNew,setIsNew]=useState(false);
-const  [category,setCategory]=useState()
+  
+
   return (
-
-<View style={styles.container}>
-{/* <AccountScreen/> */}
-<ListingEditScreen/>
-</View>
-
+    <View style={styles.container}>
+      {/* <ListingEditScreen/> */}
+     
+      {/* <ImageInputLayout title="Select Image" onPress={selectImage}/>
+      <Button title="Select Image" onPress={selectImage} />
+      {imageUri && <Image source={{ uri: imageUri }} style={styles.image} />}
+      <Text>hi</Text> */}
+      <Screen>
+      <ImageInputtt/>
+      </Screen>
+     
+      {/* <ImageInputLayout imageUri={require("./app/assets/chair.jpg")}/> */}
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-  flex:1,
-  backgroundColor: '#f8f4f4',
-  paddingTop:'18%'
+    flex: 1,
+    backgroundColor: '#f8f4f4',
+    alignItems: "flex-start",
+    marginTop:'3%',
+    marginLeft:'3%'
+   
+  },
+  image: {
+    width: '100%',
+    height: 500,
+    marginTop: 20,
   },
 });

@@ -2,10 +2,10 @@ import { StyleSheet } from "react-native";
 import colors from '../../config/colors';
 const styles = StyleSheet.create({
     btn: {
-        height: 65,
-        width: '80%',
+        height: 60,
+        width: 150,
         backgroundColor: colors.primary,
-        borderRadius: 30,
+        borderRadius: 50,
         alignItems: 'center',
         justifyContent: 'center',
         marginVertical:'5%',

@@ -12,8 +12,8 @@ function Screen({ children, style }) {
 
 const styles = StyleSheet.create({
   screen: {
-    //paddingTop:"5%",
-    flex: 1,
+    paddingTop:"10%",
+   
   },
   view: {
     flex: 1,

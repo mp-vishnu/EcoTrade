@@ -10,7 +10,7 @@ import {
 } from "../../components/forms";
 import Screen from "../../components/Screen";
 import CategoryPickerItem from "../CategoryPickerItem";
-
+import ImageInput from "../ImageInput";
 const validationSchema = Yup.object().shape({
   title: Yup.string().required().min(1).label("Title"),
   price: Yup.number().required().min(1).max(10000).label("Price"),
@@ -37,6 +37,7 @@ function ListingEditScreen() {
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
       >
+         <ImageInputLayout title="Select Image" />
         <FormField maxLength={255} name="title" placeholder="Title" />
         <FormField
           keyboardType="numeric"

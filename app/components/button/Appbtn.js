@@ -4,9 +4,13 @@ import styles from './styles';
 import colors from '../../config/colors';
 function Appbtn({title,onPress,color}) {
     return (
-            <TouchableOpacity style={[styles.btn,{backgroundColor:colors[color]}]} onPress={onPress}>
-                <Text style={styles.btntxt}>{title}</Text>
+        <View style={styles.btn}>
+            <TouchableOpacity style={[{backgroundColor:colors[color],borderRadius:50}]} onPress={onPress}>
+              
+               <Text style={styles.btntxt}>{title}</Text>
+              
             </TouchableOpacity>
+            </View>
     );
 }
 

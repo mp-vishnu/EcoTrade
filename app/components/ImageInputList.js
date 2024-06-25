@@ -5,7 +5,8 @@ function ImageInputList({imageUris=[],onRemoveImage, onAddImage}) {
     const scrollView=useRef();
    
     return (
-      <ScrollView 
+    <View style={{height:120}}>
+        <ScrollView 
       ref={scrollView} 
       horizontal={true} 
       onContentSizeChange={()=> scrollView.current.scrollToEnd()}>
@@ -21,6 +22,7 @@ function ImageInputList({imageUris=[],onRemoveImage, onAddImage}) {
             <ImageInput onChangeImage={(uri)=>onAddImage(uri)}/>
         </View>
       </ScrollView>
+    </View>
     );
 }
 

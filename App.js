@@ -5,7 +5,7 @@ import * as ImagePicker from 'expo-image-picker';
 import ListingEditScreen from './app/components/Screen/ListingEditScreen';
 import ImageInputtt from './app/components/ImageInputtt';
 import Screen from './app/components/Screen';
-
+//import ListingEditScreen from './app/components/Screen/ListingEditScreen';
 export default function App() {
   
 
@@ -18,7 +18,7 @@ export default function App() {
       {imageUri && <Image source={{ uri: imageUri }} style={styles.image} />}
       <Text>hi</Text> */}
       <Screen>
-      <ImageInputtt/>
+      <ListingEditScreen/>
       </Screen>
      
       {/* <ImageInputLayout imageUri={require("./app/assets/chair.jpg")}/> */}

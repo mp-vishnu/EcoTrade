@@ -3,7 +3,7 @@ import colors from '../../config/colors';
 const styles = StyleSheet.create({
     btn: {
         height: 60,
-        width: 150,
+        width: 160,
         backgroundColor: colors.primary,
         borderRadius: 50,
         alignItems: 'center',

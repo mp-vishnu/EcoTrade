@@ -1,7 +1,9 @@
 import React from 'react'
 import { View, ImageBackground, StyleSheet, Image, Text } from 'react-native';
 import Appbtn from '../button/Appbtn';
-function Welcome() {
+import routes from '../../navigation/routes';
+
+function Welcome({navigation}) {
   return(
     <ImageBackground
     style={styles.background}
@@ -18,8 +20,8 @@ function Welcome() {
         <View style={styles.regbtn}>
         </View> */}
        <View style={styles.btncontainer}>
-       <Appbtn title="LOGIN" onPress={()=>console.log("login clicked")} color="primary"/>
-        <Appbtn title="REGISTER" onPress={()=>console.log("login register")} color="secondary"/>
+       <Appbtn title="LOGIN" onPress={()=>navigation.navigate(routes.LOGIN)} color="primary"/>
+        <Appbtn title="REGISTER" onPress={()=>navigation.navigate(routes.REGISTER)} color="secondary"/>
        </View>
     </ImageBackground>
    )
